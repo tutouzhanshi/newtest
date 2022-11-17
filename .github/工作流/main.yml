@@ -6,7 +6,7 @@ name: Java CI with Maven
 on:
   workflow_dispatch:
   schedule:
-    - cron: "8 8 ** *"
+    - cron: "8 0 * * *"
 
 jobs:
   build:
@@ -26,4 +26,3 @@ jobs:
     - name: Run Java
       run: java -jar ./target/VxMessageActions-1.0-SNAPSHOT.jar
       
-    
